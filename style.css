@@ -1,0 +1,9 @@
+body {
+  font-size: 18px;
+  margin: 2% 20%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
