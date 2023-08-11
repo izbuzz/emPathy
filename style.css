@@ -7,3 +7,51 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+
+/* || Gallery view */
+#gallery-container {
+  --current-slide: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery-prev, #gallery-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  /* basic styling */
+  padding: 0;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  transition: color 0.1s;
+}
+
+#gallery-next {
+  right: 0;
+}
+
+#gallery {
+  display: flex;
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.gallery-images {
+  /* display: flex; */
+  flex: 0 0 100%;
+  overflow: hidden;
+
+  max-width: inherit;
+  max-height: inherit;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
