@@ -18,7 +18,7 @@ buttonPrevious.addEventListener("click", () => {
 
 buttonNext.addEventListener("click", () => {
   current++;
-  if (current > galleryLength) {
+  if (current > galleryLength - 1) {
     current = 0;
   }
 
