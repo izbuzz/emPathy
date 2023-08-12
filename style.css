@@ -5,8 +5,23 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
-  margin: 20px;
+  justify-content: space-between;
+  margin: 20px 10%;
+}
+
+/* fixed navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+
+  background-color: white;
+}
+
+/* room for the navbar */
+#content {
+  margin-top: 8%;
 }
 
 /* || Organization */
