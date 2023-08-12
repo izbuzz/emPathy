@@ -1,11 +1,31 @@
 body {
   font-size: 18px;
-  margin: 2% 20%;
+  margin: auto;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
+  margin: 20px;
+}
+
+/* || Organization */
+.text-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px #e1e3e8;
 }
 
 /* || Gallery view */
@@ -13,6 +33,8 @@ nav {
   --current-slide: 0;
   position: relative;
   overflow: hidden;
+  margin: 2% 15%;
+  width: 40%;
 }
 
 #gallery-prev, #gallery-next {
