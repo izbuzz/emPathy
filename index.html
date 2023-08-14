@@ -10,23 +10,36 @@
     <div id="navbar">
       <nav>
 	<a id="logo" src="">emPathy</a>
-	<div id="search">Search</div>
+	<a id="about" src="">about</a>
+	<a id="partnering" src="">partnering</a>
+	<form id="searchbox">
+	  <input type="text" id="search-input" aria-label="Search" placeholder="search..."/>
+	  <svg id="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+	</form>
+
 	<button id="login">login</button>
       </nav>
     </div>
 
-    <div id="content"
-      <div class="text-container">
-	<h1>emPathy</h1>
-	<p>
-	  Helping you find your path with emPathy.
-	  <br>
-	  Careers? Hobbies? Skills? We do them all.
-	</p>
-	<button id="sign-up">Sign up</button>
+    <div id="content">
+      <div class="text-container row">
+	<div>
+	  <h1>emPathy</h1>
+	  <h2>Helping you find your path with emPathy.</h2>
+	  <p>
+	    Careers? Hobbies? Skills? We gather the information so you can
+	    get started right away.
+	  </p>
+
+	  <button id="signup-button">Sign up</button>
+	  or
+	  <button id="login-button">Log in</button>
+	</div>
+	<img id="step-picture" src="assets/logo1.jpg"></img>
       </div>
 
-      <div class="text-container row box">
+      <h2 class="text-container center">About emPathy</div>
+      <div class="text-container row box" id="float">
 	<div>
 	  <h3>Resources, resources!</h3>
 	  <p>
@@ -55,6 +68,43 @@
 	    learn something new? Explore new options! From
 	    jobs to careers to hobbies!
 	  </p>
+	</div>
+      </div>
+
+      <div>
+      <h2 class="center">Why Choose emPathy?</h2>
+	<div class="text-container id="why-empathy">
+	  <ul>
+	    <h3>Learners</h3>
+	    <li>progress tracker and recorder</li>
+	    <li>centralized up-to-date resources</li>
+	    <li>easy job, carrer, and hobby search</li>
+	    <li>professional guidance (pay)</li>
+	  </ul>
+	  <ul>
+	    <h3>Educators</h3>
+	    <li>collaboration on resources</li>
+	    <li>more exposure to learners</li>
+	    <li>offers to create quality resources</li>
+	  </ul>
+	  <ul>
+	    <h3>Job Recruiters</h3>
+	    <li>access to pool of determined learners</li>
+	    <li>collaborations for more exposure</li>
+	    <li>ability to target niche job markets</li>
+	  </ul>
+	  <ul>
+	    <h3>Community</h3>
+	    <li>access to curated resources free of charge</li>
+	    <li>engagement with community to ensure quality resources</li>
+	    <li>create a market for well written resources</li>
+	  </ul>
+	  <ul>
+	    <h3>You</h3>
+	    <li>assist you in your career and education</li>
+	    <li>learn new skills or hobbies for fun</li>
+	    <li>provide an alternative means of education</li>
+	  </ul>
 	</div>
       </div>
 

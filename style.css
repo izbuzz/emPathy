@@ -1,12 +1,15 @@
 body {
-  font-size: 18px;
   margin: auto;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px 10%;
+  align-items: center;
+
+  margin: 10px 10%;
+
+  gap: 10px;
 }
 
 /* fixed navbar */
@@ -17,6 +20,49 @@ nav {
   box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
 
   background-color: white;
+  z-index: 10;
+}
+
+#about {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+#partnering {
+  margin-right: 3%;
+}
+
+/* || Search box */
+#searchbox {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#search-input {
+  position: absolute;
+
+  font-size: inherit;
+  padding: 5px 30px;
+  width: 50%;
+
+  border-radius: 8px;
+  border: 2px solid #dbdcdc;
+}
+
+#search-icon {
+  position: absolute;
+
+  color: #8e969f;
+
+  left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20px;
+
+  pointer-events: none;
 }
 
 /* room for the navbar */
@@ -28,7 +74,17 @@ nav {
 .text-container {
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 5%;
+  margin-bottom: 15px;
+}
+
+#float {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.center {
+  text-align: center;
 }
 
 .row {
@@ -41,6 +97,44 @@ nav {
 
   border-radius: 5px;
   box-shadow: 0 0 10px #e1e3e8;
+}
+
+.picture-container {
+  width: 100%;
+}
+
+#step-picture {
+  height: auto;
+  width: 20%;
+  right: 0;
+  margin-left: 10%;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+#signup-button {
+  background-color: #00689f;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+#login-button {
+  background-color: #dbdbdb;
+  margin-left: 10px;
+}
+
+#why-empathy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  padding-up: 10%;
+  padding-bottom: 30px;
 }
 
 /* || Gallery view */
@@ -82,7 +176,6 @@ nav {
 }
 
 .gallery-images {
-  /* display: flex; */
   flex: 0 0 100%;
   overflow: hidden;
 
@@ -92,3 +185,4 @@ nav {
   width: inherit;
   object-fit: cover;
 }
+
