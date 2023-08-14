@@ -131,7 +131,6 @@ button {
   flex-wrap: wrap;
   gap: 10px;
 
-  padding-up: 10%;
   padding-bottom: 30px;
 }
 
@@ -146,8 +145,9 @@ button {
   --current-slide: 0;
   position: relative;
   overflow: hidden;
-  margin: 2% 15%;
-  width: 40%;
+
+  left: 0;
+  width: 30%;
 }
 
 #gallery-prev, #gallery-next {
@@ -188,4 +188,19 @@ button {
   height: inherit;
   width: inherit;
   object-fit: cover;
+}
+
+/* || Diagonal container */
+.diagonal-container {
+  margin: 0;
+  background-image: linear-gradient(45deg, #00679e, #00486d);
+  transform: skewY(-2deg);
+}
+
+.diagonal-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 50em;
+  margin: 0 auto;
+  transform: skewY(2deg);
 }
