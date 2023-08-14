@@ -77,12 +77,6 @@ nav {
   margin-bottom: 15px;
 }
 
-#float {
-  background-color: white;
-  position: relative;
-  z-index: 2;
-}
-
 .center {
   text-align: center;
 }
@@ -128,6 +122,10 @@ button {
   margin-left: 10px;
 }
 
+#empathy-header {
+  margin-bottom: 5%;
+}
+
 #why-empathy {
   display: flex;
   flex-wrap: wrap;
@@ -135,6 +133,12 @@ button {
 
   padding-up: 10%;
   padding-bottom: 30px;
+}
+
+.darker-background {
+  padding-top: 15px;
+  background-color: #f9f9fb;
+  margin: 0;
 }
 
 /* || Gallery view */
@@ -185,4 +189,3 @@ button {
   width: inherit;
   object-fit: cover;
 }
-
