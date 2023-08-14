@@ -19,7 +19,7 @@ body{
 
 .heading h1{
     font-size: 50px;
-    color: #000;
+    color: #000000;
     margin-bottom: 25px;
     position: relative;
 }
@@ -37,6 +37,7 @@ body{
     font-size: 18px;
     color: #666;
     margin-bottom: 35px;
+    margin-left: 2px;
 }
 .container{
     width:90%;
@@ -78,6 +79,32 @@ body{
     font-size: 18px;
     line-height: 1.5;
     color: #666;
+}
+#logo{
+    width: 5%;
+}
+#navbar{
+    border: #000000 solid 1px ;
+   
+   background-color: #000000;
+    display: flex;
+    justify-content: end;
+    
+    color: rgb(237, 237, 237);
+  
+    margin: 0%;
+}
+a{
+    color: white;
+    text-decoration: none;
+ 
+}
+
+nav a{
+  
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 @media screen  and(max-width:768px){
