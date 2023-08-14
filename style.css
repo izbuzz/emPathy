@@ -12,13 +12,28 @@ nav {
   gap: 10px;
 }
 
+nav a {
+  margin-right: 1%;
+  margin-left: 1%;
+  color: #000;
+  text-decoration: none;
+}
+
 footer {
   padding: 50px 10%;
   padding-bottom: 100px;
 }
 
-/* fixed navbar */
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+/* || navbar */
 #navbar {
+  /* fixed navbar */
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,22 +43,6 @@ footer {
   z-index: 10;
 }
 
-#about {
-  margin-right: 3%;
-  margin-left: 3%;
-  color: #000;
-  text-decoration: none;
-}
-
-a{
-  color: #000;
-  text-decoration: none;
-}
-#partnering {
-  margin-right: 3%;
-}
-
-/* || Search box */
 #searchbox {
   position: relative;
 
@@ -81,33 +80,32 @@ a{
   margin-top: 8%;
 }
 
-/* || Organization */
-.text-container {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 15px;
+/* || empathy section */
+
+#signup-button {
+  background-color: #00689f;
+  color: #ffffff;
+  margin-right: 10px;
 }
 
-.center {
-  text-align: center;
+#login-button {
+  background-color: #dbdbdb;
+  margin-left: 10px;
 }
 
-.row {
+#empathy-header {
+  margin-bottom: 5%;
+}
+
+#empathy-why {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+
+  padding-bottom: 30px;
 }
 
-.box {
-  padding: 20px;
-
-  border-radius: 5px;
-  box-shadow: 0 0 10px #e1e3e8;
-}
-
-.picture-container {
-  width: 100%;
-}
-
+/* logo picture */
 #step-picture {
   height: auto;
   width: 20%;
@@ -138,34 +136,31 @@ a{
   text-decoration: underline;
 }
 
-button {
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.1em;
+/* || Organization */
+.text-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 15px;
 }
 
-#signup-button {
-  background-color: #00689f;
-  color: #ffffff;
-  margin-right: 10px;
+.center {
+  text-align: center;
 }
 
-#login-button {
-  background-color: #dbdbdb;
-  margin-left: 10px;
-}
-
-#empathy-header {
-  margin-bottom: 5%;
-}
-
-#empathy-why {
+.row {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
+}
 
-  padding-bottom: 30px;
+.box {
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px #e1e3e8;
+}
+
+.picture-container {
+  width: 100%;
 }
 
 .darker-background {
