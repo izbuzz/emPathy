@@ -1,0 +1,146 @@
+body {
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px 10%;
+  gap: 10px;
+}
+
+nav a {
+  margin-right: 1%;
+  margin-left: 1%;
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  padding: 50px 10%;
+  padding-bottom: 100px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+/* || navbar */
+#navbar {
+  /* fixed navbar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+
+  background-color: white;
+  z-index: 10;
+}
+
+#searchbox {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#search-input {
+  position: absolute;
+
+  font-size: inherit;
+  padding: 5px 30px;
+  width: 50%;
+
+  border-radius: 8px;
+  border: 2px solid #dbdcdc;
+}
+
+#search-icon {
+  position: absolute;
+
+  color: #8e969f;
+
+  left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20px;
+
+  pointer-events: none;
+}
+
+h1{
+  margin-top: 8%;
+}
+/* Specific styles for the registration form */
+.registration-form {
+  width: 70%;
+  /* Increase the width */
+  max-width: 600px;
+  /* Adjust the max-width */
+  margin: 2em auto;
+  /* Add margin for spacing */
+  padding: 2em;
+  /* Add padding for spacing */
+  border: 2px solid #3b3b4f;
+  /* Add border */
+  border-radius: 10px;
+  /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
+  background-color: #1b1b32;
+  /* Adjust background color */
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+.registration-form fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+.registration-form fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.registration-form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.registration-form input,
+.registration-form textarea,
+.registration-form select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.registration-form input,
+.registration-form textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.registration-form input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+.registration-form input[type="file"] {
+  padding: 1px 2px;
+}
