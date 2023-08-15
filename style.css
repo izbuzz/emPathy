@@ -136,6 +136,74 @@ button {
   text-decoration: underline;
 }
 
+/* || empathy career page */
+#toolbar {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid #00496e;
+}
+
+#toolbar button {
+  width: 100%;
+}
+
+#pfp {
+  border-radius: 50%;
+  width: 25%;
+  margin-left: 20%;
+}
+
+#main-jump {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-jump-box {
+  width: 45%;
+  background-color: white;
+  border: solid #cdcdcd;
+  border-radius: 10px;
+
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.main-jump-box a {
+  color: black;
+  text-decoration: none;
+  transition: 2s all;
+}
+.main-jump-box a:hover {
+  text-decoration: underline;
+}
+
+#recently-added {
+  list-style-type: none;
+  padding: 0;
+}
+
+#for-later {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15%;
+}
+
+.recent-item {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  border-radius: 5px;
+
+  padding: 10px;
+  margin-left: 0;
+}
+
+#recently-added .recent-item:nth-child(2n+1) {
+  background-color: #f9f9fb;
+}
+
 /* || Organization */
 .text-container {
   margin-left: 15%;
