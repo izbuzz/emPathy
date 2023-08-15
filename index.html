@@ -19,65 +19,66 @@
       <a href="career.html">career</a>
     </nav>
 
-    <div id="content">
+    <main>
       <div class="bubble" id="x1"></div>
       <div class="bubble" id="x2"></div>
       <div class="bubble" id="x3"></div>
       <div class="bubble" id="x4"></div>
-      <div class="text-container row" id="empathy-header">
-	<div>
-	  <h1>emPathy</h1>
-	  <h2>Helping you find your path with emPathy.</h2>
-	  <p>
-	    Careers? Hobbies? Skills? We gather the information so you can
-	    get started right away.
-	  </p>
 
-	  <a href="signup.html">
-	  <button id="signup-button">Sign up</button>
-	  </a>
-	  or
-	  <button id="login-button">Log in</button>
+      <section class="emp-content emp-banner">
+	<div class="block">
+	  <div>
+	    <h1>emPathy</h1>
+	    <h2>Helping you find your path with emPathy.</h2>
+	    <p>
+	      Careers? Hobbies? Skills? We gather the information so you can
+	      get started right away.
+	    </p>
+
+	    <a href="signup.html">
+	      <button id="signup-button">Sign up</button>
+	    </a>
+	    or
+	    <button id="login-button">Log in</button>
+	  </div>
+	  <img id="logo-picture" src="assets/logo1.jpg"></img>
 	</div>
-	<img id="step-picture" src="assets/logo1.jpg"></img>
-      </div>
+      </section>
 
-      <h2 class="text-container center">About emPathy</h2>
-      <div class="text-container row box">
-	<div>
-	  <h3>Resources, resources!</h3>
-	  <p>
-	    This site features a curated list of resources so you don't
-	    have to scour the internet. Better yet, we work continously
-	    with experts and audiences alike to keep the
-	    content up to date and accurate.
-	  </p>
+      <section class="emp-content box">
+	  <h2 class="heading">About emPathy</h2>
+	<div class="row">
+	  <div>
+	    <h3>Resources, resources!</h3>
+	    <p>
+	      With a curated list of resources, you never have to scour the
+	      internet again. Better yet, we work continously with experts and
+	      audiences to keep the content updated and accurate.
+	    </p>
+	  </div>
+
+	  <div>
+	    <h3>Path to success</h3>
+	    <p>
+	      Keep track of your goals with integrated progress checks. Compare
+	      it with your past self or others around you level to ensure
+	      steady progress.
+	    </p>
+	  </div>
+
+	  <div>
+	    <h3>Exploring paths</h3>
+	    <p>
+	      Not satisfied with your current career? Want to learn something
+	      new? Explore new options! From jobs to careers to hobbies!
+	    </p>
+	  </div>
 	</div>
+      </section>
 
-	<div>
-	  <h3>Path to success</h3>
-	  <p>
-	    Keep track of your goals with integrated
-	    progress checks. Record your progress and compare
-	    it with your past self or others around you level.
-	    Ensure a steady progress and compare your 
-	    experiences with others when in trouble.
-	  </p>
-	</div>
-
-	<div>
-	  <h3>Exploring paths</h3>
-	  <p>
-	    Not satisfied with your current career? Want to
-	    learn something new? Explore new options! From
-	    jobs to careers to hobbies!
-	  </p>
-	</div>
-      </div>
-
-      <div class="darker-background">
-      <h2 class="center">Why Choose emPathy?</h2>
-	<div class="text-container" id="empathy-why">
+      <section class="emp-content-alt">
+	<h2 class="heading">Why Choose emPathy?</h2>
+	<div class="grid3col">
 	  <ul>
 	    <h3>Learners</h3>
 	    <li>progress tracker and recorder</li>
@@ -110,11 +111,11 @@
 	    <li>provide an alternative means of education</li>
 	  </ul>
 	</div>
-      </div>
+      </section>
 
-      <h2 class="center">Pictures</h2>
-      <div class="diagonal-container">
+      <section class="diagonal-container">
 	<div class="diagonal-content" id="gallery-container">
+	  <h2 class="heading">Pictures</h2>
 	  <button id="gallery-prev">
 	    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
 	  </button>
@@ -137,11 +138,11 @@
 	    </img>
 	  </div>
 	</div>
-      </div>
+      </section>
 
-      <div class="darker-background">
-	<h2 class="center" id="empathy-other">Reaching out</h2>
-	<div class="row" id="empathy-other-links">
+      <section class="emp-content-alt">
+	<h2 class="heading heading--pad">Reaching out</h2>
+	<div class="row row--tighten emp-links">
 	  <ul>
 	    <h3>Company</h3>
 	    <li><a href="">Our goals</a></li>
@@ -180,8 +181,8 @@
 	  ©2023 by emPathy<br>
 	  Made for AllStarCode demo day by Zhejie, Pius, Eduardo, and Ivan
 	</footer>
-      </div>
-    </div>
+      </section>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>

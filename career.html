@@ -7,95 +7,93 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="navbar">
-      <nav>
-	<a id="logo" href="index.html">emPathy</a>
-	<a href="about.html">About</a>
-	<a href="">partnering</a>
-	<form id="searchbox">
-	  <input type="text" id="search-input" aria-label="Search" placeholder="search..."/>
-	  <svg id="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-	</form>
+    <nav id="navbar">
+      <a id="logo" href="index.html">emPathy</a>
+      <a href="about.html">About</a>
+      <a href="">Partnering</a>
+      <form id="searchbox">
+	<input type="text" id="search-input" aria-label="Search" placeholder="search..."/>
+	<svg id="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </form>
 
-	<button id="login">login</button>
-      </nav>
-    </div>
+      <button id="login">login</button>
+    </nav>
 
-    <div id="content">
-      <div class="text-container" id="toolbar">
+    <main>
+      <div class="emp-toolbar">
 	<button>Main</button>
 	<button>Career</button>
 	<button>Account</button>
 	<button>Settings</button>
       </div>
 
-      <div class="text-container box row">
+      <section class="emp-content block box">
 	<div>
 	  <h1>John Doe</h1>
 	  <h3>Member since 1918</h3>
 	  Computer lover with a flair for singing.
 	</div>
-	<img id="pfp" src="assets/logo1.jpg"></img>
-      </div>
+	<img class="emp-pfp" src="assets/logo1.jpg"></img>
+      </section>
 
-      <hr class="text-container">
-      <h2 class="text-container">Jump back in</h2>
+      <section class="emp-content">
+	<h2 class="heading">Jump back in</h2>
+	<div class="grid2col emp-links">
+	  <div class="box-border">
+	    <h3><a href="">computer science</a></h3>
+	    <ul>
+	      <li><a href="">Structure and Interpretation of Computer Programs</a></li>
+	      <li><a href="">Compilers</a></li>
+	      <li><a href="">Essence of Computer Programming</a></li>
+	      <li><a href="">Algorithms</a></li>
+	      <li><a href="">How to Make a Good Website</a></li>
+	    </ul>
+	  </div>
+	  <div class="box-border">
+	    <h3><a href="">knitting</a></h3>
+	    <ul>
+	      <li><a href="">A Guide to String</a></li>
+	      <li><a href="">Intricate Patterns of Knitting</a></li>
+	      <li><a href="">Ways to Cloth the Cat</a></li>
+	    </ul>
+	  </div>
+	  <div class="box-border">
+	    <h3><a href="">singing</a></h3>
+	    <ul>
+	      <li><a href="">Beginner's Guide to Pitch</a></li>
+	      <li><a href="">Creating a Falsetto</a></li>
+	    </ul>
+	  </div>
+	  <div class="box-border">
+	    <h3><a href="">dancing</a></h3>
+	    <ul>
+	      <li><a href="">History of Dance</a></li>
+	      <li><a href="">Learn Dance by Party Dancing</a></li>
+	    </ul>
+	  </div>
+	</div>
+      </section>
 
-      <div id="main-jump" class="text-container row">
-	<div class="main-jump-box">
-	  <h3><a href="">computer science</a></h3>
-	  <ul>
-	    <li><a href="">Structure and Interpretation of Computer Programs</a></li>
-	    <li><a href="">Compilers</a></li>
-	    <li><a href="">Essence of Computer Programming</a></li>
-	    <li><a href="">Algorithms</a></li>
-	    <li><a href="">How to Make a Good Website</a></li>
-	  </ul>
-	</div>
-	<div class="main-jump-box">
-	  <h3><a href="">knitting</a></h3>
-	  <ul>
-	    <li><a href="">A Guide to String</a></li>
-	    <li><a href="">Intricate Patterns of Knitting</a></li>
-	    <li><a href="">Ways to Cloth the Cat</a></li>
-	  </ul>
-	</div>
-	<div class="main-jump-box">
-	  <h3><a href="">singing</a></h3>
-	  <ul>
-	    <li><a href="">Beginner's Guide to Pitch</a></li>
-	    <li><a href="">Creating a Falsetto</a></li>
-	  </ul>
-	</div>
-	<div class="main-jump-box">
-	  <h3><a href="">dancing</a></h3>
-	  <ul>
-	    <li><a href="">History of Dance</a></li>
-	    <li><a href="">Learn Dance by Party Dancing</a></li>
-	  </ul>
-	</div>
-      </div>
-
-      <div class="text-container">
+      <section class="emp-content">
 	<h2>Recently Added</h2>
-	<ul id="recently-added">
-	  <li class="recent-item"><a href="">drawing</a></li>
-	  <li class="recent-item"><a href="">running</a></li>
-	  <li class="recent-item"><a href="">chemistry</a></li>
-	  <li class="recent-item"><a href="">statistics</a></li>
+	<ul class="alt-table emp-links">
+	  <li class="item"><a href="">drawing</a></li>
+	  <li class="item"><a href="">running</a></li>
+	  <li class="item"><a href="">chemistry</a></li>
+	  <li class="item"><a href="">statistics</a></li>
 	</ul>
-      </div>
+      </section>
 
-      <div class="text-container">
+      <div class="emp-content">
 	<h2>Saved for later</h2>
-	<ul id="for-later">
-	  <li class="recent-item"><a href="">Structure and Interpretation of Computer Programs</a></li>
-	  <li class="recent-item"><a href="">Running the Run</a></li>
-	  <li class="recent-item"><a href="">Compiler</a></li>
-	  <li class="recent-item"><a href="">Guide to the String</a></li>
+	<ul class="alt-table emp-links">
+	  <li class="item"><a href="">Structure and Interpretation of Computer Programs</a></li>
+	  <li class="item"><a href="">Running the Run</a></li>
+	  <li class="item"><a href="">Compiler</a></li>
+	  <li class="item"><a href="">Guide to the String</a></li>
 	</ul>
       </div>
-    </div> 
+    </main> 
 </body>
 </html>
 
