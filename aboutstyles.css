@@ -18,7 +18,7 @@ body{
 }
 
 .heading h1{
-    font-size: 50px;
+    font-size: 40px;
     color: #000000;
     margin-bottom: 25px;
     position: relative;
@@ -80,32 +80,70 @@ body{
     line-height: 1.5;
     color: #666;
 }
-#logo{
-    width: 5%;
-}
-#navbar{
-    border: #000000 solid 1px ;
-   
-   background-color: #000000;
-   
-    justify-content: end;
-    
-    color: rgb(237, 237, 237);
-  
-    margin: 0%;
-}
-a{
-    color: white;
-    text-decoration: none;
- 
-}
 
-nav a{
+#login-button {
+    background-color: #dbdbdb;
+    margin-left: 10px;
+  }
+
+#navbar {
+    /* fixed navbar */
+    position: sticky;
+    top: 0;
+    z-index: 10;
   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 10px 10%;
+    gap: 30px;
+  
+    background-color: white;
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+  }
+  #navbar a {
+    color: black;
+    text-decoration: none;
+  }
+
+  #searchbox {
+    position: relative;
+  
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  #search-input {
+    position: absolute;
+  
+    font-size: inherit;
+    padding: 5px 30px;
+    width: 50%;
+  
+    border-radius: 8px;
+    border: 2px solid #dbdcdc;
+  }
+  
+  #search-icon {
+    position: absolute;
+  
+    color: #8e969f;
+  
+    left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20px;
+  
+    pointer-events: none;
+  }
+  button {
+    border: none;
+    border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
+    font-size: 1.1em;
+  }
 
 @media screen  and(max-width:768px){
     .heading{
@@ -136,3 +174,4 @@ nav a{
     }
     
 }
+
