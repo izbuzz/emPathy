@@ -1,21 +1,6 @@
 body {
-  margin: auto;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 10px 10%;
-  gap: 10px;
-}
-
-nav a {
-  margin-right: 1%;
-  margin-left: 1%;
-  color: #000;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
@@ -33,13 +18,24 @@ button {
 /* || navbar */
 #navbar {
   /* fixed navbar */
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-  box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 10%;
+  gap: 30px;
 
   background-color: white;
-  z-index: 10;
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+}
+
+#navbar a {
+  color: black;
+  text-decoration: none;
 }
 
 #searchbox {
