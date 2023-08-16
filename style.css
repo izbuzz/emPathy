@@ -127,6 +127,24 @@ button {
   height: 300px;
 }
 
+#emp-search {
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#emp-search-input {
+  font-size: inherit;
+  padding: 10px 30px;
+  width: 100%;
+
+  border-radius: 8px;
+  border: 2px solid #dbdcdc;
+
+  box-sizing: border-box;
+}
+
 /* || empathy career page */
 .emp-toolbar {
   font-size: 1.2em;
@@ -205,6 +223,14 @@ button {
   padding-left: 10%;
 }
 
+.grid1col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+
+  max-width: 1100px;
+}
+
 .grid2col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -255,16 +281,6 @@ button {
   padding: 30px;
 }
 
-.main-jump-box a {
-  color: black;
-  text-decoration: none;
-  transition: 2s all;
-}
-
-.main-jump-box a:hover {
-  text-decoration: underline;
-}
-
 .alt-table {
   list-style-type: none;
   padding: 0;
@@ -284,6 +300,7 @@ button {
 .alt-table .item:nth-child(2n+1) {
   background-color: #f9f9fb;
 }
+
 
 /* || Gallery view */
 #gallery-container {
