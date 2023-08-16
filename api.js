@@ -20,6 +20,7 @@ function createListing(job) {
   location.textContent = job["location"]
   const link = document.createElement("a");
   link.href = "https://www.indeed.com/viewjob?jk=" + job["link"].slice(4);
+  link.textContent = "link";
 
   e.append(company, desc, location, link);
   jobs.append(e);
