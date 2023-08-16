@@ -1,0 +1,152 @@
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 50px 10%;
+    padding-bottom: 100px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+#search-input {
+    background: white;
+    margin: 0;
+}
+
+/* || navbar */
+#navbar {
+    /* fixed navbar */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 10%;
+    gap: 30px;
+
+    background-color: white;
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+#searchbox {
+    position: relative;
+
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#search-input {
+    position: absolute;
+
+    font-size: inherit;
+    padding: 5px 30px;
+    width: 50%;
+
+    border-radius: 8px;
+    border: 2px solid #dbdcdc;
+}
+
+#search-icon {
+    position: absolute;
+
+    color: #8e969f;
+
+    left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20px;
+
+    pointer-events: none;
+}
+
+h1{
+    text-align: center;
+}
+form:not(#searchbox) {
+    width: 35rem;
+    margin: auto;
+    color: #000; /* Black text color for better contrast */
+    backdrop-filter: blur(16px) saturate(150%); /* Slightly reduced saturation */
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
+    background-color: rgba(200, 200, 200, 0.9); /* Light gray background color */
+    border-radius: 12px;
+    border: 1px solid rgba(2, 37, 78, 0.5); /* Increased alpha for border visibility */
+    padding: 20px 25px;
+}
+
+input:not(#search-input)[type="text"],
+input[type="password"] {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.8; /* Adjusted opacity for better hover effect */
+    cursor: pointer;
+}
+
+.headingsContainer {
+    text-align: center;
+}
+
+.headingsContainer p {
+    color: #888; /* Slightly adjusted color for better readability */
+}
+
+.mainContainer {
+    padding: 16px;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subcontainer a {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #444; /* Adjusted color for better contrast */
+}
+
+span.forgotpsd a {
+    float: right;
+    color: #eee; /* Lightened color for contrast */
+    padding-top: 16px;
+}
+
+.forgotpsd a {
+    color: rgb(74, 146, 235);
+    text-decoration: none;
+}
+
+.register {
+    color: #fff;
+    text-align: center;
+}
+
+.register a {
+    color: rgb(74, 146, 235);
+    text-decoration: none;
+}

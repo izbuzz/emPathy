@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>emPathy</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <a id="logo" href="index.html">emPathy</a>
+    <a href="about.html">About</a>
+    <a href="">Partnering</a>
+    <form id="searchbox">
+      <input type="text" id="search-input" aria-label="Search" placeholder="search..." />
+      <svg id="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </form>
+    <a href="login.html">Login</a>
+		<a href="career.html">Career</a>
+  </nav>
+  <br>
+  <form action="">
+    <!-- Headings for the form -->
+    <div class="headingsContainer">
+        <h3>Sign in</h3>
+        <p>Sign in with your username and password</p>
+    </div>
+
+    <!-- Main container for all inputs -->
+    <div class="mainContainer">
+        <!-- Username -->
+        <label for="username">Your username</label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="pswrd">Your password</label>
+        <input type="password" placeholder="Enter Password" name="pswrd" required>
+
+        <!-- sub container for the checkbox and forgot password link -->
+        <div class="subcontainer">
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+        </div>
+
+
+        <!-- Submit button -->
+        <button type="submit">Login</button>
+
+        <!-- Sign up link -->
+        <p class="register">Not a member?  <a href="#">Register here!</a></p>
+
+    </div>
+
+</form>
+
+  <footer>
+    <hr>
+    ©2023 by emPathy<br>
+    Made for AllStarCode demo day by Zhejie, Pius, Eduardo, and Ivan
+  </footer>
+</body>
+
+</html>
