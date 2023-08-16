@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Career Recommendation</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            padding: 50px 10%;
+            padding-bottom: 100px;
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1.1em;
+        }
+
+        /* || navbar */
+        #navbar {
+            /* fixed navbar */
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 10%;
+            gap: 30px;
+
+            background-color: white;
+            box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+        }
+
+        #navbar a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #searchbox {
+            position: relative;
+
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+        }
+
+        #search-input {
+            position: absolute;
+
+            font-size: inherit;
+            padding: 5px 30px;
+            width: 50%;
+
+            border-radius: 8px;
+            border: 2px solid #dbdcdc;
+        }
+
+        #search-icon {
+            position: absolute;
+
+            color: #8e969f;
+
+            left: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 20px;
+
+            pointer-events: none;
+        }
+
+        .progress-bar {width: 100%; background-color: #ddd;}
+        .progress {height: 20px; background-color: #4CAF50; width: 0;}
+        .question {font-weight: bold; margin-top: 20px; text-align: left;}
+        .options {display: flex; justify-content: space-between; align-items: center;}
+        .option {flex-grow: 1; padding: 5px; text-align: center;}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a id="logo" href="index.html">emPathy</a>
+        <a href="about.html">About</a>
+        <a href="">Partnering</a>
+        <form id="searchbox">
+            <input type="text" id="search-input" aria-label="Search" placeholder="search..." />
+            <svg id="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </form>
+        <a href="login.html">Login</a>
+        <a href="career.html">Career</a>
+    </nav>
+
+    <h1>Career Recommendation Quiz</h1>
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <div class="question">
+        <p>Question 1: How do you feel about working in a team?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q1" value="0"> Not comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="25"> Somewhat comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="50"> Neutral</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="75"> Quite comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="100"> Very comfortable</label></div>
+    </div>
+
+
+    <div class="question">
+        <p>Question 2: How do you handle stress?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q2" value="0"> Get overwhelmed easily</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="25"> Manage stress fairly well</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="50"> Stay neutral under stress</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="75"> Handle stress confidently</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="100"> Rarely get stressed</label></div>
+    </div>
+
+    <div class="question">
+        <p>Question 3: How do you approach problem-solving?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q3" value="0"> Avoid problems</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="25"> Tackle problems cautiously</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="50"> Consider various solutions</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="75"> Enjoy finding solutions</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="100"> Thrive on challenges</label></div>
+    </div>
+
+    <div class="question">
+        <p>Question 4: How organized are you in your work?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q4" value="0"> Very disorganized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="25"> Somewhat disorganized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="50"> Moderately organized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="75"> Fairly organized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="100"> Very organized</label></div>
+    </div>
+
+    <div class="question">
+        <p>Question 5: How do you adapt to change?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q5" value="0"> Struggle with change</label></div>
+        <div class="option"><label><input type="radio" name="q5" value="25"> Adaptable with time</label></div>
+        <div class="option"><label><input type="radio" name="q5" value="50"> Handle change well</label></div>
+        <div class="option"><label><input type="radio" name="q5" value="75"> Embrace change</label></div>
+        <div class="option"><label><input type="radio" name="q5" value="100"> Thrive in dynamic environments</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>Question 6: How do you feel about public speaking?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q6" value="0"> Terrified of it</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="25"> Uncomfortable, but can manage</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="50"> Neutral</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="75"> Somewhat comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="100"> Very confident</label></div>
+    </div>
+
+    <div class="question">
+        <p>Question 7: How important is creativity in your work?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q7" value="0"> Not important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="25"> Somewhat important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="50"> Moderately important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="75"> Quite important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="100"> Extremely important</label></div>
+    </div>
+
+    <div class="question">
+        <p>Question 8: How comfortable are you with learning new technologies?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q8" value="0"> Very uncomfortable</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="25"> Somewhat uncomfortable</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="50"> Neutral</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="75"> Fairly comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="100"> Very comfortable</label></div>
+    </div>
+
+    <div class="question">
+        <p>Question 9: How do you handle feedback and criticism?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q9" value="0"> Take it personally and get upset</label>
+        </div>
+        <div class="option"><label><input type="radio" name="q9" value="25"> Feel a bit defensive, but consider
+                it</label></div>
+        <div class="option"><label><input type="radio" name="q9" value="50"> Listen and evaluate feedback</label></div>
+        <div class="option"><label><input type="radio" name="q9" value="75"> Appreciate constructive criticism</label>
+        </div>
+        <div class="option"><label><input type="radio" name="q9" value="100"> Seek feedback to improve</label></div>
+    </div>
+
+    <div class="question">
+        <p>Question 10: How do you manage your time?</p>
+    </div>
+    <div class="options">
+        <div class="option"><label><input type="radio" name="q10" value="0"> Often miss deadlines</label></div>
+        <div class="option"><label><input type="radio" name="q10" value="25"> Struggle with time management</label>
+        </div>
+        <div class="option"><label><input type="radio" name="q10" value="50"> Manage time reasonably well</label></div>
+        <div class="option"><label><input type="radio" name="q10" value="75"> Good at prioritizing tasks</label></div>
+        <div class="option"><label><input type="radio" name="q10" value="100"> Excellent time management skills</label>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        ©2023 by emPathy<br>
+        Made for AllStarCode demo day by Zhejie, Pius, Eduardo, and Ivan
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.options');
+        const progressBar = document.querySelector('.progress');
+        const totalQuestions = questions.length;
+        let currentQuestion = 0;
+        let totalPercentage = 0;
+
+        document.addEventListener('change', function (event) {
+            if (event.target.matches('.options input[type="radio"]')) {
+                const selectedValue = parseInt(event.target.value);
+                totalPercentage += selectedValue;
+                progressBar.style.width = ((currentQuestion + 1) / totalQuestions) * 100 + '%';
+
+                if (currentQuestion < totalQuestions - 1) {
+                    currentQuestion++;
+                    questions[currentQuestion - 1].style.display = 'none';
+                    questions[currentQuestion].style.display = 'flex';
+                } else {
+                    let recommendation = '';
+                    let potentialCareers = '';
+
+                    if (totalPercentage < 10) {
+                        recommendation = "You might be suited for jobs that require more independent work.";
+                        potentialCareers = "Potential careers: Freelancer, Writer, Graphic Designer";
+                    } else if (totalPercentage < 20) {
+                        recommendation = "You have a good balance of teamwork and independence.";
+                        potentialCareers = "Potential careers: Project Manager, Data Analyst, Marketing Specialist";
+                    } else if (totalPercentage < 30) {
+                        recommendation = "You seem to excel in team-based environments.";
+                        potentialCareers = "Potential careers: Team Leader, Human Resources Manager, Sales Manager";
+                    } else if (totalPercentage < 40) {
+                        recommendation = "You thrive in collaborative and leadership roles.";
+                        potentialCareers = "Potential careers: CEO, Entrepreneur, Leadership roles";
+                    } else if (totalPercentage < 50) {
+                        recommendation = "You have a unique set of skills that can lead to various career paths.";
+                        potentialCareers = "Potential careers: Innovator, Consultant, Cross-functional roles";
+                    } else if (totalPercentage < 60) {
+                        recommendation = "You excel in creative and analytical fields.";
+                        potentialCareers = "Potential careers: Creative Director, UX Designer, Financial Analyst";
+                    } else if (totalPercentage < 70) {
+                        recommendation = "You are well-suited for roles requiring strong communication skills.";
+                        potentialCareers = "Potential careers: Public Relations Specialist, Journalist, Event Planner";
+                    } else if (totalPercentage < 80) {
+                        recommendation = "Your problem-solving abilities make you a great fit for technical roles.";
+                        potentialCareers = "Potential careers: Software Engineer, Scientist, Researcher";
+                    } else if (totalPercentage < 90) {
+                        recommendation = "You have a natural talent for leadership and organization.";
+                        potentialCareers = "Potential careers: Manager, Director, Business Analyst";
+                    } else {
+                        recommendation = "You possess a broad skillset for diverse career opportunities.";
+                        potentialCareers = "Potential careers: Consultant, Entrepreneur, Executive";
+                    }
+
+                    document.body.innerHTML += `<p><strong>Career Recommendation:</strong> ${recommendation}</p>`;
+                    document.body.innerHTML += `<p>${potentialCareers}</p>`;
+                    progressBar.style.width = '100%'; // Set the progress bar to 100% at the end
+
+                    // Hide the options
+                    const optionsDiv = document.querySelector('.options');
+                    optionsDiv.style.display = 'none';
+                }
+            }
+        });
+    </script>
+
+    <!-- ... Rest of the HTML code ... -->
+</body>
+
+</html>
