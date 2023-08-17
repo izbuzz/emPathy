@@ -10,13 +10,6 @@ footer {
   padding-bottom: 100px;
 }
 
-button {
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.1em;
-}
-
 /* || navbar */
 #navbar {
   /* fixed navbar */
@@ -146,11 +139,6 @@ button {
   font-size: 18px;
   line-height: 1.5;
   color: #666;
-}
-
-#login-button {
-  background-color: #dbdbdb;
-  margin-left: 10px;
 }
 
 @media screen and (max-width:768px) {
