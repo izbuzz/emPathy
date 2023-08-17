@@ -47,6 +47,7 @@ button {
   display: flex;
   flex-grow: 1;
   align-items: center;
+  color: white;
 }
 
 #search-input {
@@ -57,13 +58,16 @@ button {
   width: 50%;
 
   border-radius: 8px;
-  border: 2px solid #dbdcdc;
+  border: 2px solid #7dc4c6;
+
+  background-color: #00689f;
+  color: white;
 }
 
 #search-icon {
   position: absolute;
 
-  color: #8e969f;
+  color: white;
 
   left: 0;
   padding-left: 5px;
@@ -72,6 +76,7 @@ button {
 
   pointer-events: none;
 }
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;

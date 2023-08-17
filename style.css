@@ -37,8 +37,6 @@ button {
 
 #navbar a {
   color: white;
-  /* color: #ffc46a; */
-  /* color: #90ee90; */
   font-weight: bold;
   text-decoration: none;
 }
@@ -49,6 +47,7 @@ button {
   display: flex;
   flex-grow: 1;
   align-items: center;
+  color: white;
 }
 
 #search-input {
@@ -59,13 +58,16 @@ button {
   width: 50%;
 
   border-radius: 8px;
-  border: 2px solid #dbdcdc;
+  border: 2px solid #7dc4c6;
+
+  background-color: #00689f;
+  color: white;
 }
 
 #search-icon {
   position: absolute;
 
-  color: #8e969f;
+  color: white;
 
   left: 0;
   padding-left: 5px;
@@ -77,8 +79,7 @@ button {
 
 /* || empathy section */
 .emp-banner {
-  margin-top: 60px;
-  height: 350px;
+  padding-top: 60px;
 }
 
 .emp-content {
@@ -92,6 +93,7 @@ button {
 
 .emp-content-alt {
   background-color: #f9f9fb;
+  /* background-color: #e8f5f9; */
   margin: 0;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -102,12 +104,13 @@ button {
     radial-gradient(64.50px at 50% calc(100% - 88.00px),#000 99%,#0000 101%) calc(50% - 64px) 0/128px 100%,
     radial-gradient(64.50px at 50% calc(100% + 56.00px),#0000 99%,#000 101%) 50% calc(100% - 32px)/128px 100% repeat-x;
   mask: var(--mask);
+  background-color: #00689f;
+  height: 100px;
 }
 
 .emp-content-dark {
   background-color: #00689f;
   margin: 0;
-  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -126,8 +129,7 @@ button {
 }
 
 #signup-button {
-  background-color: #00689f;
-  color: #ffffff;
+  background-color: #7dc4c6;
   margin-right: 10px;
 }
 
@@ -140,6 +142,9 @@ button {
   margin: 0 auto;
   width: auto;
   height: 300px;
+
+  border-radius: 50%;
+  z-index: 5;
 }
 
 #emp-search {
@@ -319,7 +324,6 @@ button {
   background-color: #f9f9fb;
 }
 
-
 /* || Gallery view */
 #gallery-container {
   --current-slide: 0;
@@ -370,40 +374,52 @@ button {
   object-fit: cover;
 }
 
+/* || Themes */
+.orange-fg {
+  color: #ffc46a;
+}
+
+.white-fg {
+  color: white;
+}
+
+.green-fg {
+  color: #7dc4c6;
+}
+
 /* || Bubbles */
 .bubble {
   width: 60px;
   height: 60px;
-  background: #dcdcdc;
+  background: transparent;
+  border: solid white;
   border-radius: 200px;
   position: absolute;
   z-index: 2;
+  opacity: 0.1;
 }
 
 #x1 {
   width: 120px;
   height: 120px;
-  left: 15%;
+  left: 5%;
   transform: scale(0.9);
-  opacity: 0.2;
 }
 
 #x2 {
-  width: 320px;
-  height: 320px;
-  left: 45%;
-  top: 15%;
+  width: 240px;
+  height: 240px;
+  left: 43%;
+  top: 5%;
   transform: scale(0.9);
-  opacity: 0.2;
 }
 
 #x3 {
   width: 180px;
   height: 180px;
-  left: 20%;
-  top: 40%;
+  left: 30%;
+  top: 45%;
   transform: scale(0.9);
-  opacity: 0.2;
 }
 
 #x4 {
@@ -412,5 +428,20 @@ button {
   left: 80%;
   top: 50%;
   transform: scale(0.9);
-  opacity: 0.2;
+}
+
+#x5 {
+  width: 140px;
+  height: 140px;
+  left: 80%;
+  top: 20%;
+  transform: scale(0.9);
+}
+
+#x6 {
+  width: 60;
+  height: 60;
+  left: 50%;
+  top: 60%;
+  transform: scale(0.9);
 }

@@ -47,35 +47,39 @@ button {
 }
 
 #searchbox {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  color: white;
 }
 
 #search-input {
-    position: absolute;
+  position: absolute;
 
-    font-size: inherit;
-    padding: 5px 30px;
-    width: 50%;
+  font-size: inherit;
+  padding: 5px 30px;
+  width: 50%;
 
-    border-radius: 8px;
-    border: 2px solid #dbdcdc;
+  border-radius: 8px;
+  border: 2px solid #7dc4c6;
+
+  background-color: #00689f;
+  color: white;
 }
 
 #search-icon {
-    position: absolute;
+  position: absolute;
 
-    color: #8e969f;
+  color: white;
 
-    left: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 20px;
+  left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20px;
 
-    pointer-events: none;
+  pointer-events: none;
 }
 
 h1{
