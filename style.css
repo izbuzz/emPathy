@@ -31,7 +31,7 @@ button {
   padding: 20px 10%;
   gap: 30px;
 
-  background-color: white;
+  background-color: #00496e;
   box-shadow: 0 1px 5px rgb(0, 0, 0, 0.2);
 }
 
@@ -75,6 +75,7 @@ button {
 /* || empathy section */
 .emp-banner {
   margin-top: 60px;
+  height: 350px;
 }
 
 .emp-content {
@@ -88,6 +89,20 @@ button {
 
 .emp-content-alt {
   background-color: #f9f9fb;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.wave {
+  --mask:
+    radial-gradient(64.50px at 50% calc(100% - 88.00px),#000 99%,#0000 101%) calc(50% - 64px) 0/128px 100%,
+    radial-gradient(64.50px at 50% calc(100% + 56.00px),#0000 99%,#000 101%) 50% calc(100% - 32px)/128px 100% repeat-x;
+  mask: var(--mask);
+}
+
+.emp-content-dark {
+  background-color: #00689f;
   margin: 0;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -359,6 +374,7 @@ button {
   background: #dcdcdc;
   border-radius: 200px;
   position: absolute;
+  z-index: 2;
 }
 
 #x1 {
