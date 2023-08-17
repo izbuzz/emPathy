@@ -26,23 +26,46 @@
 	<a href="">Settings</a>
       </div>
 
-      <section class="emp-content emp-links">
+      <section class="emp-content">
 	<h1 class="heading">Computer Science (tracking)</h1>
 	<hr>
-	<h2>resources</h2>
-	<ul>
-	  <li><a href="https://web.mit.edu/6.001/6.037/sicp.pdf">Structure and Interpretation of Computer Programs★★★★★ </a></li>
-	  <li><a href="">Compilers ★★★★★</a></li>
-	  <li><a href="">Essence of Computer Programming ★★★☆☆</a></li>
-	  <li><a href="">Algorithms ★★★★★</a></li>
-	  <li><a href="">How to Make a Good Website ★★★★☆</a></li>
+	<h2>Your Resources</h2>
+	<ul class="alt-table emp-links">
+	  <li><a href="">Compilers</a><button>Mark as done</button></li>
+	  <li><a href="">Essence of Computer Programming</a><button>Mark as done</button></li>
+	  <li>
+	    <a href="https://web.mit.edu/6.001/6.037/sicp.pdf">
+	      Structure and Interpretation of Computer Programs
+	    </a>
+	    <div>
+	      Completed!
+	    </div>
+	  </li>
+	</ul>
+	<h2>Recommended Resources</h2>
+	<p>
+	  Resources vetted by experts or highly regarded by the community.
+	  Paid resouces are denoted with a $ while ratings by the
+	  community is shown with a star.
+	</p>
+	<ul class="alt-table emp-links">
+	  <li>
+	    <a href="https://web.mit.edu/6.001/6.037/sicp.pdf">
+	      Structure and Interpretation of Computer Programs (★★★★★)
+	    </a>
+	  </li>
+	  <li><a href="">Compilers ($ ★★★★☆)</a></li>
+	  <li><a href="">Essence of Computer Programming (★★★★★)</a></li>
+	  <li><a href="">Algorithms (★★★★★)</a><button>add</button></li>
+	  <li><a href="">How to Make a Good Website ($ ★★★★☆)</a><button>add</button></li>
+	  <li><a href=""><b>Other Resources</b></a></li>
 	</ul>
 	<hr>
       </section>
       <section class="emp-content">
-	<h2>Jobs</h2>
-	<ul id="jobs">
-	</ul>
+	<h2 class="heading">Jobs</h2>
+	<div id="jobs">
+	</div>
       <section>
     </main>
     <script src="search.js"></script>

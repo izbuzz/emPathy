@@ -11,17 +11,18 @@ json["hits"].forEach(job => createListing(job));
 
 
 function createListing(job) {
-  const e = document.createElement("li");
+  const e = document.createElement("div");
+  e.classList.add("box");
   const company = document.createElement("h3");
   company.textContent = job["company_name"];
-  const desc = document.createElement("p");
-  desc.textContent = job["title"];
   const location = document.createElement("h4");
   location.textContent = job["location"]
+  const desc = document.createElement("p");
+  desc.textContent = job["title"];
   const link = document.createElement("a");
   link.href = "https://www.indeed.com/viewjob?jk=" + job["link"].slice(4);
-  link.textContent = "link";
+  link.textContent = "more info";
 
-  e.append(company, desc, location, link);
+  e.append(company, location, desc, link);
   jobs.append(e);
 }
