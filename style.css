@@ -36,7 +36,10 @@ button {
 }
 
 #navbar a {
-  color: black;
+  color: white;
+  /* color: #ffc46a; */
+  /* color: #90ee90; */
+  font-weight: bold;
   text-decoration: none;
 }
 
