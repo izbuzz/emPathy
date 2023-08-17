@@ -104,6 +104,9 @@ button {
     radial-gradient(64.50px at 50% calc(100% - 88.00px),#000 99%,#0000 101%) calc(50% - 64px) 0/128px 100%,
     radial-gradient(64.50px at 50% calc(100% + 56.00px),#0000 99%,#000 101%) 50% calc(100% - 32px)/128px 100% repeat-x;
   mask: var(--mask);
+  /* for MacOS */
+  -webit-mask: var(--mask);
+
   background-color: #00689f;
   height: 100px;
 }
