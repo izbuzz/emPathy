@@ -7,18 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav id="navbar">
-      <a href="index.html">emPathy<span></a>
+    <nav id="navbar">
+      <a id="logo" href="index.html">emPathy</a>
       <a href="about.html">About</a>
       <a href="questions.html">Quiz</a>
       <form id="searchbox">
-	<input type="text" id="search-input" aria-label="Search" placeholder="search..." />
-	<svg id="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-	  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-	  stroke-linejoin="round" class="feather feather-search">
-	  <circle cx="11" cy="11" r="8"></circle>
-	  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-	</svg>
+	<input type="text" id="search-input" aria-label="Search" placeholder="search..."/>
+	<svg id="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
       </form>
       <a href="login.html">Login</a>
       <a href="career.html">Career</a>
@@ -72,6 +67,9 @@
 	<h2 class="heading">Jobs</h2>
 	<div id="jobs">
 	</div>
+	<button id="show-more">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+	</button>
       <section>
     </main>
     <script src="search.js"></script>
