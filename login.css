@@ -1,5 +1,6 @@
 body {
     font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
@@ -36,7 +37,7 @@ button {
     gap: 30px;
 
     background-color: white;
-    box-shadow: 0 0 3px rgb(0, 0, 0, 0.6);
+    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.2);
 }
 
 #navbar a {
