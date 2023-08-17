@@ -216,6 +216,10 @@ button {
   padding: 0;
 }
 
+.expand {
+  width: 100%;
+}
+
 @media (min-width:700px) {
   .block {
     display: grid;
