@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
-	    line-height: 1.5;
+            line-height: 1.5;
             margin: 0;
             padding: 0;
         }
@@ -38,7 +38,7 @@
             gap: 30px;
 
             background-color: white;
-	    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.2);
+            box-shadow: 0 1px 5px rgb(0, 0, 0, 0.2);
         }
 
         #navbar a {
@@ -78,11 +78,34 @@
             pointer-events: none;
         }
 
-        .progress-bar {width: 100%; background-color: #ddd;}
-        .progress {height: 20px; background-color: #4CAF50; width: 0;}
-        .question {font-weight: bold; margin-top: 20px; text-align: left;}
-        .options {display: flex; justify-content: space-between; align-items: center;}
-        .option {flex-grow: 1; padding: 5px; text-align: center;}
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        .progress {
+            height: 20px;
+            background-color: #4CAF50;
+            width: 0;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .option {
+            flex-grow: 1;
+            padding: 5px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -114,10 +137,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q1" value="0"> Not comfortable</label></div>
-        <div class="option"><label><input type="radio" name="q1" value="25"> Somewhat comfortable</label></div>
-        <div class="option"><label><input type="radio" name="q1" value="50"> Neutral</label></div>
-        <div class="option"><label><input type="radio" name="q1" value="75"> Quite comfortable</label></div>
-        <div class="option"><label><input type="radio" name="q1" value="100"> Very comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="2"> Somewhat comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="5"> Neutral</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="7"> Quite comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q1" value="10"> Very comfortable</label></div>
     </div>
 
 
@@ -126,10 +149,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q2" value="0"> Get overwhelmed easily</label></div>
-        <div class="option"><label><input type="radio" name="q2" value="25"> Manage stress fairly well</label></div>
-        <div class="option"><label><input type="radio" name="q2" value="50"> Stay neutral under stress</label></div>
-        <div class="option"><label><input type="radio" name="q2" value="75"> Handle stress confidently</label></div>
-        <div class="option"><label><input type="radio" name="q2" value="100"> Rarely get stressed</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="2"> Manage stress fairly well</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="5"> Stay neutral under stress</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="7"> Handle stress confidently</label></div>
+        <div class="option"><label><input type="radio" name="q2" value="10"> Rarely get stressed</label></div>
     </div>
 
     <div class="question">
@@ -137,10 +160,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q3" value="0"> Avoid problems</label></div>
-        <div class="option"><label><input type="radio" name="q3" value="25"> Tackle problems cautiously</label></div>
-        <div class="option"><label><input type="radio" name="q3" value="50"> Consider various solutions</label></div>
-        <div class="option"><label><input type="radio" name="q3" value="75"> Enjoy finding solutions</label></div>
-        <div class="option"><label><input type="radio" name="q3" value="100"> Thrive on challenges</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="2"> Tackle problems cautiously</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="5"> Consider various solutions</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="7"> Enjoy finding solutions</label></div>
+        <div class="option"><label><input type="radio" name="q3" value="10"> Thrive on challenges</label></div>
     </div>
 
     <div class="question">
@@ -148,10 +171,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q4" value="0"> Very disorganized</label></div>
-        <div class="option"><label><input type="radio" name="q4" value="25"> Somewhat disorganized</label></div>
-        <div class="option"><label><input type="radio" name="q4" value="50"> Moderately organized</label></div>
-        <div class="option"><label><input type="radio" name="q4" value="75"> Fairly organized</label></div>
-        <div class="option"><label><input type="radio" name="q4" value="100"> Very organized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="2"> Somewhat disorganized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="5"> Moderately organized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="7"> Fairly organized</label></div>
+        <div class="option"><label><input type="radio" name="q4" value="10"> Very organized</label></div>
     </div>
 
     <div class="question">
@@ -159,10 +182,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q5" value="0"> Struggle with change</label></div>
-        <div class="option"><label><input type="radio" name="q5" value="25"> Adaptable with time</label></div>
-        <div class="option"><label><input type="radio" name="q5" value="50"> Handle change well</label></div>
-        <div class="option"><label><input type="radio" name="q5" value="75"> Embrace change</label></div>
-        <div class="option"><label><input type="radio" name="q5" value="100"> Thrive in dynamic environments</label>
+        <div class="option"><label><input type="radio" name="q5" value="2"> Adaptable with time</label></div>
+        <div class="option"><label><input type="radio" name="q5" value="5"> Handle change well</label></div>
+        <div class="option"><label><input type="radio" name="q5" value="7"> Embrace change</label></div>
+        <div class="option"><label><input type="radio" name="q5" value="10"> Thrive in dynamic environments</label>
         </div>
     </div>
 
@@ -171,10 +194,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q6" value="0"> Terrified of it</label></div>
-        <div class="option"><label><input type="radio" name="q6" value="25"> Uncomfortable, but can manage</label></div>
-        <div class="option"><label><input type="radio" name="q6" value="50"> Neutral</label></div>
-        <div class="option"><label><input type="radio" name="q6" value="75"> Somewhat comfortable</label></div>
-        <div class="option"><label><input type="radio" name="q6" value="100"> Very confident</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="2"> Uncomfortable, but can manage</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="5"> Neutral</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="7"> Somewhat comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q6" value="10"> Very confident</label></div>
     </div>
 
     <div class="question">
@@ -182,10 +205,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q7" value="0"> Not important</label></div>
-        <div class="option"><label><input type="radio" name="q7" value="25"> Somewhat important</label></div>
-        <div class="option"><label><input type="radio" name="q7" value="50"> Moderately important</label></div>
-        <div class="option"><label><input type="radio" name="q7" value="75"> Quite important</label></div>
-        <div class="option"><label><input type="radio" name="q7" value="100"> Extremely important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="2"> Somewhat important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="5"> Moderately important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="7"> Quite important</label></div>
+        <div class="option"><label><input type="radio" name="q7" value="10"> Extremely important</label></div>
     </div>
 
     <div class="question">
@@ -193,10 +216,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q8" value="0"> Very uncomfortable</label></div>
-        <div class="option"><label><input type="radio" name="q8" value="25"> Somewhat uncomfortable</label></div>
-        <div class="option"><label><input type="radio" name="q8" value="50"> Neutral</label></div>
-        <div class="option"><label><input type="radio" name="q8" value="75"> Fairly comfortable</label></div>
-        <div class="option"><label><input type="radio" name="q8" value="100"> Very comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="2"> Somewhat uncomfortable</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="5"> Neutral</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="7"> Fairly comfortable</label></div>
+        <div class="option"><label><input type="radio" name="q8" value="10"> Very comfortable</label></div>
     </div>
 
     <div class="question">
@@ -205,12 +228,12 @@
     <div class="options">
         <div class="option"><label><input type="radio" name="q9" value="0"> Take it personally and get upset</label>
         </div>
-        <div class="option"><label><input type="radio" name="q9" value="25"> Feel a bit defensive, but consider
+        <div class="option"><label><input type="radio" name="q9" value="2"> Feel a bit defensive, but consider
                 it</label></div>
-        <div class="option"><label><input type="radio" name="q9" value="50"> Listen and evaluate feedback</label></div>
-        <div class="option"><label><input type="radio" name="q9" value="75"> Appreciate constructive criticism</label>
+        <div class="option"><label><input type="radio" name="q9" value="5"> Listen and evaluate feedback</label></div>
+        <div class="option"><label><input type="radio" name="q9" value="7"> Appreciate constructive criticism</label>
         </div>
-        <div class="option"><label><input type="radio" name="q9" value="100"> Seek feedback to improve</label></div>
+        <div class="option"><label><input type="radio" name="q9" value="10"> Seek feedback to improve</label></div>
     </div>
 
     <div class="question">
@@ -218,11 +241,10 @@
     </div>
     <div class="options">
         <div class="option"><label><input type="radio" name="q10" value="0"> Often miss deadlines</label></div>
-        <div class="option"><label><input type="radio" name="q10" value="25"> Struggle with time management</label>
-        </div>
-        <div class="option"><label><input type="radio" name="q10" value="50"> Manage time reasonably well</label></div>
-        <div class="option"><label><input type="radio" name="q10" value="75"> Good at prioritizing tasks</label></div>
-        <div class="option"><label><input type="radio" name="q10" value="100"> Excellent time management skills</label>
+        <div class="option"><label><input type="radio" name="q10" value="2"> Struggle with time management</label></div>
+        <div class="option"><label><input type="radio" name="q10" value="5"> Manage time reasonably well</label></div>
+        <div class="option"><label><input type="radio" name="q10" value="7"> Good at prioritizing tasks</label></div>
+        <div class="option"><label><input type="radio" name="q10" value="10"> Excellent time management skills</label>
         </div>
     </div>
 
@@ -246,32 +268,33 @@
                 } else {
                     let recommendation = '';
                     let potentialCareers = '';
+                    questions[currentQuestion].style.display = 'none';
 
-                    if (totalPercentage < 10) {
+                    if (totalPercentage <= 10) {
                         recommendation = "You might be suited for jobs that require more independent work.";
                         potentialCareers = "Potential careers: Freelancer, Writer, Graphic Designer";
-                    } else if (totalPercentage < 20) {
+                    } else if (totalPercentage <= 20) {
                         recommendation = "You have a good balance of teamwork and independence.";
                         potentialCareers = "Potential careers: Project Manager, Data Analyst, Marketing Specialist";
-                    } else if (totalPercentage < 30) {
+                    } else if (totalPercentage <= 30) {
                         recommendation = "You seem to excel in team-based environments.";
                         potentialCareers = "Potential careers: Team Leader, Human Resources Manager, Sales Manager";
-                    } else if (totalPercentage < 40) {
+                    } else if (totalPercentage <= 40) {
                         recommendation = "You thrive in collaborative and leadership roles.";
                         potentialCareers = "Potential careers: CEO, Entrepreneur, Leadership roles";
-                    } else if (totalPercentage < 50) {
+                    } else if (totalPercentage <= 50) {
                         recommendation = "You have a unique set of skills that can lead to various career paths.";
                         potentialCareers = "Potential careers: Innovator, Consultant, Cross-functional roles";
-                    } else if (totalPercentage < 60) {
+                    } else if (totalPercentage <= 60) {
                         recommendation = "You excel in creative and analytical fields.";
                         potentialCareers = "Potential careers: Creative Director, UX Designer, Financial Analyst";
-                    } else if (totalPercentage < 70) {
+                    } else if (totalPercentage <= 70) {
                         recommendation = "You are well-suited for roles requiring strong communication skills.";
                         potentialCareers = "Potential careers: Public Relations Specialist, Journalist, Event Planner";
-                    } else if (totalPercentage < 80) {
+                    } else if (totalPercentage <= 80) {
                         recommendation = "Your problem-solving abilities make you a great fit for technical roles.";
                         potentialCareers = "Potential careers: Software Engineer, Scientist, Researcher";
-                    } else if (totalPercentage < 90) {
+                    } else if (totalPercentage <= 90) {
                         recommendation = "You have a natural talent for leadership and organization.";
                         potentialCareers = "Potential careers: Manager, Director, Business Analyst";
                     } else {
@@ -279,8 +302,11 @@
                         potentialCareers = "Potential careers: Consultant, Entrepreneur, Executive";
                     }
 
-                    document.body.innerHTML += `<p><strong>Career Recommendation:</strong> ${recommendation}</p>`;
-                    document.body.innerHTML += `<p>${potentialCareers}</p>`;
+                    const recommendationContainer = document.createElement('div');
+                    recommendationContainer.style.textAlign = 'center'; // Center align the content
+                    recommendationContainer.innerHTML = `<p><strong>Career Recommendation:</strong> ${recommendation}</p><p>${potentialCareers}</p>`;
+                    document.body.appendChild(recommendationContainer);
+
                     progressBar.style.width = '100%'; // Set the progress bar to 100% at the end
 
                     // Hide the options
@@ -290,8 +316,5 @@
             }
         });
     </script>
-
-    <!-- ... Rest of the HTML code ... -->
 </body>
-
 </html>
